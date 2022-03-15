@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
   "devDependencies": {
     "typescript": "^4.6.2"
   }

@@ -2,6 +2,7 @@
   "name": "ts-references",
   "version": "0.0.1",
   "scripts": {
+    "build-submodule": "yarn workspaces foreach run build",
     "tsc": "yarn workspaces foreach run tsc",
     "webpack:ts-loader": "yarn workspaces foreach run webpack:ts-loader",
     "webpack:babel-loader": "yarn workspaces foreach run webpack:babel-loader",
