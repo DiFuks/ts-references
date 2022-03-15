@@ -1,0 +1,14 @@
+{
+  "name": "ts-references",
+  "version": "0.0.1",
+  "scripts": {
+    "tsc": "yarn workspaces foreach run tsc",
+    "webpack:ts-loader": "yarn workspaces foreach run webpack:ts-loader",
+    "webpack:babel-loader": "yarn workspaces foreach run webpack:babel-loader",
+    "ts-node": "yarn workspaces foreach run ts-node"
+  },
+  "workspaces": [
+    "entries/*"
+  ],
+  "packageManager": "yarn@3.2.0"
+}

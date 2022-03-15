@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.packages.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/tsc",
+    "declarationDir": "./dist/tsc",
+    "declaration": true,
+    "rootDir": "./src",
+  },
+  "references": [
+    { "path": "../submodule"}
+  ],
+  "include": ["src/**/*"]
+}

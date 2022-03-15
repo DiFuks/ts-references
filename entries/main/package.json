@@ -1,0 +1,23 @@
+{
+  "name": "@ts-references/main",
+  "version": "0.0.1",
+  "main": "dist/webpack-ts-loader/index.js",
+  "scripts": {
+    "tsc": "tsc --build",
+    "webpack:ts-loader": "webpack --config webpack.config.ts-loader.js",
+    "webpack:babel-loader": "webpack --config webpack.config.babel-loader.js",
+    "ts-node": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@ts-references/submodule": "*",
+    "babel-loader": "^8.2.3",
+    "ts-loader": "^9.2.8",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
