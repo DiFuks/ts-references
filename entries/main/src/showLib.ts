@@ -68,7 +68,7 @@
  * ts-loader (without references)
  *
  * 1. @ts-references/submodule
- * 1.1. FAIL. submodule dist exists
+ * 1.1. ОК. submodule dist exists
  * 1.2. FAIL. submodule dist empty
  *
  * 2. @ts-references/submodule/src
@@ -76,7 +76,7 @@
  * 2.2. FAIL. submodule dist empty
  *
  * 3. ../../submodule
- * 3.1. FAIL. submodule dist exists
+ * 3.1. OK. submodule dist exists
  * 3.2. FAIL. submodule dist empty
  *
  * 4. ../../submodule/src
@@ -88,16 +88,16 @@
  * ts-loader (with references)
  *
  * 1. @ts-references/submodule
- * 1.1. FAIL. submodule dist exists
- * 1.2. FAIL. submodule dist empty
+ * 1.1. ОК. submodule dist exists
+ * 1.2. OK. submodule dist empty
  *
  * 2. @ts-references/submodule/src
  * 2.1. ОК. submodule dist exists
  * 2.2. OK. submodule dist empty
  *
  * 3. ../../submodule
- * 3.1. FAIL. submodule dist exists
- * 3.2. FAIL. submodule dist empty
+ * 3.1. OK. submodule dist exists
+ * 3.2. OK. submodule dist empty
  *
  * 4. ../../submodule/src
  * 4.1. OK. submodule dist exists
