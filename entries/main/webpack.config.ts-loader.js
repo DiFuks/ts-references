@@ -15,6 +15,10 @@ module.exports = {
   module: {
     rules: [{
       test: /\.(js|tsx?)$/,
+      include: [
+        process.cwd(),
+        path.resolve(process.cwd(), '../submodule/src'),
+      ],
       use: { loader: 'ts-loader', options: { projectReferences: true } },
       exclude: /node_modules/
     }],
