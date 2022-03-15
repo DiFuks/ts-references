@@ -7,7 +7,10 @@ module.exports = {
     path: path.resolve(process.cwd(), './dist/webpack-babel-loader'),
     filename: 'index.js',
   },
-  resolve: { extensions: ['.ts', '.js'] },
+  resolve: {
+    extensions: ['.ts', '.js'],
+    symlinks: false,
+  },
   devtool: 'source-map',
   module: {
     rules: [{ test: /\.(js|tsx?)$/, loader: 'babel-loader', exclude: /node_modules/ }],
